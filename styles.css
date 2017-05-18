@@ -1,0 +1,197 @@
+body{
+	width: auto;
+	height: auto;
+	background-color: #000;
+}
+.container img{
+position: absolute;
+width: 100vw;
+height: 100vh;
+}
+.zelda{
+width:32px;
+height:32px;
+display:block;
+background-repeat: no-repeat;
+background-size: cover;
+position:absolute;
+z-index: 3;
+background-image:url(images/p3face.png);
+transition: 0.5s;
+transition-property: top, left;
+}
+
+.badguy{
+	width:32px;
+	height:32px;
+	display:block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:absolute;
+	z-index: 3;
+	transition: 0.5s;
+	background-image: url(images/mechant1.png);
+}
+.bomb{
+	background-image: url(images/bomb.png);
+	width: 25px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	filter: sepia(100%) hue-rotate(300deg);
+	animation: explose 2s;
+}
+
+.explosion{
+	background-image: url(images/explosion.png);
+	width: 25px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+}
+
+.arrow{
+	background-image: url(images/arrow.png);
+	transition: 2s linear;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	z-index: 4;
+}
+
+@keyframes explose{
+	0%{filter:sepia(100%) hue-rotate(300deg);}
+	25%{filter:sepia(0%) hue-rotate(360deg);}
+	50%{filter:sepia(100%) hue-rotate(300deg);}
+	75%{filter:sepia(0%) hue-rotate(360deg);}
+	100%{filter:sepia(100%) hue-rotate(300deg);}
+}
+
+#navigation{
+	position:fixed;
+	top:20px;
+	right:20px;
+	width:90px;
+	height:90px;
+}
+
+#pave{
+position:relative;
+
+}
+
+/*.left{
+	background: url(images/boutons.png)  30px 30px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+
+.right{
+	background: url(images/boutons.png) 30px 0px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:30px;
+	right:0px;
+}*/
+
+.top{
+	background: url(images/boutons.png) 0 0;
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:0px;
+	left:30px;
+}
+
+.bottom{
+	background: url(images/boutons.png) 0 30px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:60px;
+	left:30px;
+}
+
+.dirBas1{
+	background-position: 0px 0px;
+}
+.dirBas2{
+	background-position: -32px 0px;
+}
+.dirBas3{
+	background-position: -64px 0px;
+}
+.dirBas4{
+	background-position: -96px 0px;
+}
+.dirBas5{
+	background-position: -128px 0px;
+}
+.dirBas6{
+	background-position: -160px 0px;
+}
+
+
+.dirGauche1{
+	background-position: 0px -33px;
+}
+.dirGauche2{
+	background-position: -32px -33px;
+}
+.dirGauche3{
+	background-position: -64px -33px;
+}
+.dirGauche4{
+	background-position: -96px -33px;
+}
+.dirGauche5{
+	background-position: -128px -33px;
+}
+.dirGauche6{
+	background-position: -160px -33px;
+}
+
+.dirDroite1{
+	background-position: 0px -64px;
+}
+.dirDroite2{
+	background-position: -32px -64px;
+}
+.dirDroite3{
+	background-position: -64px -64px;
+}
+.dirDroite4{
+	background-position: -96px -64px;
+}
+.dirDroite5{
+	background-position: -128px -64px;
+}
+.dirDroite6{
+	background-position: -160px -64px;
+}
+
+.dirHaut1{
+	background-position: 0px -96px;
+}
+.dirHaut2{
+	background-position: -32px -96px;
+}
+.dirHaut3{
+	background-position: -64px -96px;
+}
+.dirHaut4{
+	background-position: -96px -96px;
+}
+.dirHaut5{
+	background-position: -128px -96px;
+}
+.dirHaut6{
+	background-position: -160px -96px;
+}
